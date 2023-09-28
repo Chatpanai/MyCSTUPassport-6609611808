@@ -1,44 +1,98 @@
+/*All page template*/
 body {
     background: linear-gradient(to right, aquamarine, rgb(220, 157, 249), rgb(246, 118, 203));
 }
-video {
-    text-align: center;
-}
-img {
-    background-color: antiquewhite;
-}
-h1 {
+.head {
     font-size: 70px;
     text-align: center;
-    background-color: antiquewhite;
-    border: 3px solid black;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    background-color: rgb(246, 217, 179);
     margin-top: -10px;
+    margin-left: -9px;
+    margin-right: -8px;
 }
-h2 { 
+.nav {
+    list-style-type: none;
+    margin: -8px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.Fr {
+    float: right;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}  
+li a:hover:not(.active){
+    background-color: #4f646f;
+}
+.Fl{
+    float: left;
+    background-color: #396dbc;
+}
+.active{
+    background-color: #4d4e69;
+}   
+/*specific for Homepage*/ 
+.myimg{
+    object-fit: cover;
+    width: 427px;
+    height: 240px;
+    border-radius: 10px;
+
+}
+.myvid{
+    object-fit: cover;
+    width: 427px;
+    height: 240px;
+    border-radius: 10px;
+}
+.myvidandimg{
+    text-align: center;
+    margin-top: 125px;
+}
+.hptxt{ 
     font-size: 40px;
     text-align: center;
     text-shadow: 3px 1px white;
+    margin-top: 50px;
 }
-li {
-    font-size: 20px;
+.mycontract{
     text-align: center;
-    list-style-position: inside;
-    background-color: antiquewhite;
-    border: 2px solid;
-    border-radius: 10px;
-    padding: 10px;
-    margin-right: 25%;
-    margin-left: 25%
+    margin-top: 10px;
 }
-.vidandimg{
+.line{
     text-align: center;
-    background-color: antiquewhite;
-    border: 3px solid black;
-    border-radius: 20px;
-    padding: 10px;
-    margin-right: 13%;
-    margin-left: 13%
-
+    width: 100px ;
+    height: 100px ;
+    margin-left: 10px;
+}
+.instra{
+    width: 100px ;
+    height: 100px ;
+    margin-left: 10px;
+}
+.img-container{
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+/*specific for MyAdvisorpage*/ 
+.myadvisorimg{
+    text-align: center;
+    margin-top: 125px;
+}
+.advisorimg{
+    width: 25%;
 }
