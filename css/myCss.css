@@ -96,3 +96,9 @@ li a:hover:not(.active){
 .advisorimg{
     width: 25%;
 }
+/*specific for MyActivitypage*/
+.myacttxt1{
+    margin-top: 130px;
+    font-size: 222px;
+    text-align: center;
+}
