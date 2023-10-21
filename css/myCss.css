@@ -13,19 +13,38 @@ body {
 }
 .nav {
     list-style-type: none;
-    margin: -8px;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -16px;
     padding: 0;
     overflow: hidden;
     background-color: #333;
     box-sizing: border-box;
 }
-  
-.Fr {
-    float: right;
+.nav h1{
+    text-align: center;
+    color: #ffffff;
     box-sizing: border-box;
 }
-  
-li a {
+.nav2 {
+    list-style-type: none;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #395894;
+    box-sizing: border-box;
+    display: none;
+}
+.nav2 li{
+    float: right;
+}
+.nav2 li:first-child{
+    float:left;
+    background-color: #07367c;
+}
+.nav2 li a {
     display: block;
     color: white;
     text-align: center;
@@ -36,18 +55,42 @@ li a {
 li a:hover:not(.active){
     background-color: #4f646f;
 }
+.nav3 {
+    list-style-type: none;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #395894;
+    box-sizing: border-box;
+}
+.nav3 li:first-child{
+    background-color: #07367c;
+}
+.nav3 li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 0;
+    text-decoration: none;
+    box-sizing: border-box;
+} 
 .Fl{
     float: left;
-    background-color: #396dbc;
+    box-sizing: border-box;
+}
+.Fr {
+    float: right;
+    box-sizing: border-box;
 }
 .active{
-    background-color: #4d4e69;
+    background-color: #396dbc;
 }
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+[class*="col-"]{
+    width: 100%
+}
+/*for for phone*/
+
 /*for desktop*/
 @media only screen and (min-width:768px){
     .col-1{width: 8.33%;}
@@ -62,6 +105,21 @@ li a:hover:not(.active){
     .col-10{width: 83.33%;}
     .col-11{width: 91.66%;}
     .col-12{width: 100%;}
+    .nav2{
+        display: list-item;
+    }
+    .nav3{
+        display: none;
+    }
+    .myvidandimg{
+        display: flex;
+    }
+    .myimg{
+        margin-right: 5px ;
+    }
+    .myvid{
+        margin-left: 5px ;
+    }
 }
 /*for tablet*/
 @media only screen and (min-width:600px) {
@@ -77,38 +135,42 @@ li a:hover:not(.active){
     .col-s-10{width: 83.33%;}
     .col-s-11{width: 91.66%;}
     .col-s-12{width: 100%;}
-    
+    .nav2{
+        display: list-item;
+    }
+    .nav3{
+        display: none;
+    }
+    .myvidandimg{
+        display: flex;
+    }
+    .myimg{
+        margin-right: 5px ;
+    }
+    .myvid{
+        margin-left: 5px ;
+    }
 }
-/*for for phone*/
-[class*="col-"]{
-    width: 100%
-}
-
 /*specific for Homepage*/ 
 .myimg{
     object-fit: cover;
-    width: 427px;
-    height: 240px;
     border-radius: 10px;
     box-sizing: border-box;
 }
 .myvid{
     object-fit: cover;
-    width: 427px;
-    height: 240px;
     border-radius: 10px;
     box-sizing: border-box;
 }
 .myvidandimg{
-    text-align: center;
-    margin-top: 125px;
     box-sizing: border-box;
+    text-align: center;
+    justify-content: center;  
 }
-.hptxt{ 
+.hptxt{
     font-size: 40px;
     text-align: center;
     text-shadow: 3px 1px white;
-    margin-top: 50px;
     box-sizing: border-box;
 }
 .mycontract{
@@ -117,28 +179,15 @@ li a:hover:not(.active){
     box-sizing: border-box;
 }
 .line{
-    text-align: center;
     width: 100px ;
     height: 100px ;
-    margin-left: 10px;
+    margin-left: 5px;
     box-sizing: border-box;
 }
 .instra{
     width: 100px ;
     height: 100px ;
-    margin-left: 10px;
-    box-sizing: border-box;
-}
-.img-container{
-    float: left;
-    width: 50%;
-    padding: 5px;
-    box-sizing: border-box;
-}
-.clearfix::after{
-    content: "";
-    clear: both;
-    display: table;
+    margin-left: 5px;
     box-sizing: border-box;
 }
 /*specific for MyAdvisorpage*/ 
