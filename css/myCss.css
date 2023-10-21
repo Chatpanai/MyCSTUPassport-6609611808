@@ -9,6 +9,7 @@ body {
     margin-top: -10px;
     margin-left: -9px;
     margin-right: -8px;
+    box-sizing: border-box;
 }
 .nav {
     list-style-type: none;
@@ -16,10 +17,12 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    box-sizing: border-box;
 }
   
 .Fr {
     float: right;
+    box-sizing: border-box;
 }
   
 li a {
@@ -28,6 +31,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    box-sizing: border-box;
 }  
 li a:hover:not(.active){
     background-color: #4f646f;
@@ -38,55 +42,104 @@ li a:hover:not(.active){
 }
 .active{
     background-color: #4d4e69;
-}   
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+/*for desktop*/
+@media only screen and (min-width:768px){
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+}
+/*for tablet*/
+@media only screen and (min-width:600px) {
+    .col-s-1{width: 8.33%;}
+    .col-s-2{width: 16.66%;}
+    .col-s-3{width: 25%;}
+    .col-s-4{width: 33.33%;}
+    .col-s-5{width: 41.66%;}
+    .col-s-6{width: 50%;}
+    .col-s-7{width: 58.33%;}
+    .col-s-8{width: 66.66%;}
+    .col-s-9{width: 75%;}
+    .col-s-10{width: 83.33%;}
+    .col-s-11{width: 91.66%;}
+    .col-s-12{width: 100%;}
+    
+}
+/*for for phone*/
+[class*="col-"]{
+    width: 100%
+}
+
 /*specific for Homepage*/ 
 .myimg{
     object-fit: cover;
     width: 427px;
     height: 240px;
     border-radius: 10px;
-
+    box-sizing: border-box;
 }
 .myvid{
     object-fit: cover;
     width: 427px;
     height: 240px;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 .myvidandimg{
     text-align: center;
     margin-top: 125px;
+    box-sizing: border-box;
 }
 .hptxt{ 
     font-size: 40px;
     text-align: center;
     text-shadow: 3px 1px white;
     margin-top: 50px;
+    box-sizing: border-box;
 }
 .mycontract{
     text-align: center;
     margin-top: 10px;
+    box-sizing: border-box;
 }
 .line{
     text-align: center;
     width: 100px ;
     height: 100px ;
     margin-left: 10px;
+    box-sizing: border-box;
 }
 .instra{
     width: 100px ;
     height: 100px ;
     margin-left: 10px;
+    box-sizing: border-box;
 }
 .img-container{
     float: left;
     width: 50%;
     padding: 5px;
+    box-sizing: border-box;
 }
 .clearfix::after{
     content: "";
     clear: both;
     display: table;
+    box-sizing: border-box;
 }
 /*specific for MyAdvisorpage*/ 
 .myadvisorimg{
